@@ -47,7 +47,35 @@ const USER_CONFIG = {
         { keyword: 'marry_day', date: '2022-09-09' },
       ],
     },
+     {
+      name: '宝贝',
+      id: 'obImO577Ar-qe8B6SeymRRZyTK7Y',
+      useTemplateId: '	-je9oPwWC90NJbGWxEf4DF-oHxdaVtwGYBYY90vq2Ac',
+      province: '安徽',
+      city: '合肥',
+      horoscopeDate: '12-30',
+      horoscopeDateType: '今日',
+      openUrl: 'https://wangxinleo.cn',
+      festivals: [ // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '宝贝', year: '1999', date: '02-08',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '狗子', year: '1996', date: '09-31',
+        },
+        {
+          type: '节日', name: '恋爱纪念日', year: '2022', date: '12-30',
+        },
+      ],
+      customizedDateList: [// 在一起的日子
+        { keyword: 'love_day', date: '2022-12-30' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2022-09-09' },],
+      courseSchedule: null
+    },
   ],
+  
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
